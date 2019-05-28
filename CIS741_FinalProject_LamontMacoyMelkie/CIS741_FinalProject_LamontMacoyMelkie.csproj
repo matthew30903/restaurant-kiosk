@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{87E70DAD-26FE-4C71-B042-0DE3C91622D0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CIS741_FinalProject_LamontMacoyMelkie</RootNamespace>
+    <AssemblyName>CIS741_FinalProject_LamontMacoyMelkie</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Food.cs" />
+    <Compile Include="frmBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBill.Designer.cs">
+      <DependentUpon>frmBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrder.Designer.cs">
+      <DependentUpon>frmOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBill.resx">
+      <DependentUpon>frmBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrder.resx">
+      <DependentUpon>frmOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChickenParmesan.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\creamy-shrimp-risotto-with-mascarpone.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lasagna_fresca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sea_Bass_alla_Fiorentina.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-Spaghetti-alla-Puttanesca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Baked-Italian-Meatballs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lentilsConProsciutto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stracotto-al-vino-rosso.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizza_napolitana.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stuffed-crust-italian-pizza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Italian_olive_and_peppers_salad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Italian-Style-Potato-Salad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Italian-Chef%27s-Salad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limoncello.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\italian-cream-soda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blood_orage_italian_soda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cannoli_fritti.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tiramisu_with_blueberries_and_raspberries.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta_caprese.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-web-buttons.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuBackground1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\creamy-shrimp-risotto-with-mascarpone1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuBackground2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonBackground1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
